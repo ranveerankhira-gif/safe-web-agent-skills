@@ -28,7 +28,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "d1ed06ebe554ca4fabf8d3adf02043c06c140ad09b023030d13c75d36a0a4f84"
     },
     {
       "name": "resource-fetcher-router",
@@ -55,7 +55,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "808439cc8eda4f963b65011aa637accc2046fa3666a222d5ce336e61b9f9fca0"
     },
     {
       "name": "shopping-research-assistant",
@@ -84,7 +84,7 @@
       "invocation_policy": "explicit-only",
       "license": "MIT",
       "version": "0.1.0",
-      "archive_sha256": null
+      "archive_sha256": "e53774fe801ff23987cca5bdb065b54fcd18a4b55c947146b82841223262e7c4"
     }
   ]
 }
