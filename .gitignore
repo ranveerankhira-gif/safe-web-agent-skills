@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.tmp
+*.log
+.pytest_cache/
+.coverage
+dist/
+build/
+config.json
+*.local.json
+*.private.json
+.env
+.env.*
+audit-results/
+

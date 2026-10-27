@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-26",
+  "policy": {
+    "allowed_classifications": [
+      "self-authored",
+      "substantially-adapted"
+    ],
+    "substantial_adaptation_requires": [
+      "fixed upstream repository and revision",
+      "upstream license preserved inside the Skill directory",
+      "SOURCE.md describing concrete structural and behavioral changes",
+      "changes beyond renaming, translation, trigger edits, or safety notes"
+    ]
+  },
+  "skills": [
+    {
+      "name": "resource-fetcher-router",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Created locally as a router over separately installed and user-configured media backends.",
+        "The public copy includes a new backend contract, independent media verifier, and tests rather than redistributing downloader Skills."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "shopping-research-assistant",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Historical records show third-party shopping-assistant and maishou candidates were rejected before this Skill was initialized locally.",
+        "Its seller-specific evidence workflow, persistence, official-client reader, tests, and permission boundaries were implemented locally."
+      ],
+      "upstream": null
+    },
+    {
+      "name": "web-tool-router",
+      "classification": "self-authored",
+      "license": "MIT",
+      "evidence": [
+        "Created and repeatedly revised locally to coordinate the user's separately installed free web tools.",
+        "The router contains local fallback, browser ownership, evidence reporting, and authorization rules rather than copied backend implementations."
+      ],
+      "upstream": null
+    }
+  ],
+  "excluded": []
+}

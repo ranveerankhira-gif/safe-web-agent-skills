@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "repository": "ranveerankhira-gif/safe-web-agent-skills",
+  "skills": [
+    {
+      "name": "web-tool-router",
+      "display_name_zh": "网页工具路由器",
+      "purpose_zh": "在用户配置的公开网页后端间进行只读路由与有界回退",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "high",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": false,
+        "credentials": true,
+        "external_state": true,
+        "cost_or_quota": false
+      },
+      "dependencies": [
+        "至少一个由用户自行安装、审查并配置的免费网页检索后端",
+        "可选：gh、yt-dlp、Ketch、Crawl4AI、Agent Reach或其他兼容只读工具",
+        "可选：OpenCLI与独立浏览器profile（仅经授权的认证读取）",
+        "可选Skill：resource-fetcher-router（获取并验证媒体内容）"
+      ],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "resource-fetcher-router",
+      "display_name_zh": "资源获取路由器",
+      "purpose_zh": "调用用户配置的媒体后端并独立验证下载结果",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "high",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": false,
+        "external_state": true,
+        "cost_or_quota": true
+      },
+      "dependencies": [
+        "Python 3.10+（运行独立媒体结果验证器）",
+        "ffprobe（由用户自行安装并配置）",
+        "用户自行安装、审查并配置的兼容资源路由器及所需下载后端"
+      ],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    },
+    {
+      "name": "shopping-research-assistant",
+      "display_name_zh": "商品选购助手",
+      "purpose_zh": "基于当前商品、评价、投诉和卖家证据开展选购调研",
+      "release": "v0.1.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "risk_level": "high",
+      "permissions": {
+        "network": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "credentials": true,
+        "external_state": true,
+        "cost_or_quota": false
+      },
+      "dependencies": [
+        "Python 3.10+（离线校验与可选长期记录）",
+        "Node.js 20+（可选淘宝／天猫官方客户端读取器）",
+        "可选Skill：web-tool-router（公开网页调研）",
+        "可选Skill：diannao-kongzhi（经授权的Windows UI自动化）",
+        "可选：用户自行安装并登录的官方客户端或已配置OpenCLI会话"
+      ],
+      "invocation_policy": "explicit-only",
+      "license": "MIT",
+      "version": "0.1.0",
+      "archive_sha256": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "bin_directory": null,
+  "enabled_backends": ["ketch", "crawl4ai", "gh", "yt-dlp", "opencli"],
+  "browser_session_owner": "opencli",
+  "browser_profile": null,
+  "authenticated_browsing_enabled": false,
+  "paid_backends_allowed": false,
+  "max_retries_per_backend": 1,
+  "notes": "Keep the real configuration outside the Skill directory. Never store credentials, cookies, session data, proxy secrets, private URLs, or account identifiers here."
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "网页工具路由器"
+  short_description: "在已审查免费后端间进行只读检索与有界回退"
+  default_prompt: "使用 $web-tool-router 完成这次公开网页检索，并报告后端、回退与证据等级。"
+policy:
+  allow_implicit_invocation: false

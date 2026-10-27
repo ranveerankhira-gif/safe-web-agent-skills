@@ -1,0 +1,7 @@
+interface:
+  display_name: "商品选购助手"
+  short_description: "显式调查具体商品、评论、投诉与售后；登录态、加购和长期记录另行授权"
+  default_prompt: "使用 $shopping-research-assistant 为我调查具体商品、负面评价、店铺售后与价格。默认只读，不使用登录态、不加购，也不保存长期购物偏好。"
+
+policy:
+  allow_implicit_invocation: false

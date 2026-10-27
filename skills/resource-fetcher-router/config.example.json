@@ -1,0 +1,9 @@
+{
+  "router_program": "<absolute-path-to-reviewed-resource-router>",
+  "policy_file": null,
+  "ffprobe_program": "ffprobe",
+  "default_output_root": "<absolute-path-to-user-selected-download-root>",
+  "max_media_bytes": 4294967296,
+  "max_parallel_downloads": 1,
+  "notes": "Keep the real configuration outside the Skill directory. Never store credentials, cookies, session data, proxy secrets, or private URLs here."
+}

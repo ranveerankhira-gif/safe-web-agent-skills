@@ -1,0 +1,6 @@
+interface:
+  display_name: "资源获取路由器"
+  short_description: "调用自备下载器并独立核验媒体结果"
+  default_prompt: "使用 $resource-fetcher-router 获取这个公开媒体资源，并按证据等级报告验证结果。"
+policy:
+  allow_implicit_invocation: false

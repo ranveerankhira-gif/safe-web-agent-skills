@@ -1,0 +1,6 @@
+{
+  "persistenceEnabled": false,
+  "stateRoot": "D:\\ExampleData\\shopping-research-state",
+  "reviewReader": "D:\\ExampleTools\\Read-Reviews.ps1",
+  "notes": "Long-term shopping memory is opt-in. If enabled, set SHOPPING_RESEARCH_STATE_ROOT to stateRoot. Keep the state directory, browser profiles, cookies and real account configuration outside this Skill."
+}
