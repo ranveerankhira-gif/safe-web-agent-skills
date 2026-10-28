@@ -1,12 +1,26 @@
 # 安全网络研究与资源获取 Skills
 
-三个中文优先、仅显式调用、强调来源证据和授权边界的 Agent Skills，用于公开网页研究、媒体资源验证和商品选购调研。
+**让 Codex 查网页、取公开媒体、比商品，但不偷偷登录、付费或替你下单。**
 
-> Three explicit-only, auditable agent skills for public web research, verified media acquisition, and seller-specific shopping research.
+这里有 3 个中文优先、仅显式调用的 Agent Skills：一个负责选择可用的网页研究后端，一个负责验证媒体文件，一个负责基于真实卖家和当前商品证据做购买研究。失败时只做有界回退，不把“帮我查”扩大成账号操作。
+
+> 3 explicit-only Codex skills for bounded public-web research, verified media acquisition, and seller-specific shopping evidence.
 
 [![Skills](https://img.shields.io/badge/skills-3-2563eb)](#skill-目录)
+[![Latest release](https://img.shields.io/github/v/release/ranveerankhira-gif/safe-web-agent-skills?label=release)](https://github.com/ranveerankhira-gif/safe-web-agent-skills/releases/latest)
+[![Validate](https://github.com/ranveerankhira-gif/safe-web-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/ranveerankhira-gif/safe-web-agent-skills/actions/workflows/validate.yml)
 [![Explicit only](https://img.shields.io/badge/invocation-explicit--only-d97706)](#共同安全边界)
 [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](LICENSE)
+
+## 30 秒找到适合你的 Skill
+
+| 你现在想做什么 | 使用哪个 Skill |
+|---|---|
+| 搜索或读取公开网页，并在后端失败时安全切换 | [`web-tool-router`](skills/web-tool-router) |
+| 获取公开媒体，并确认拿到的不是 HTML、封面或错误页 | [`resource-fetcher-router`](skills/resource-fetcher-router) |
+| 比较具体在售商品、卖家、价格和差评证据 | [`shopping-research-assistant`](skills/shopping-research-assistant) |
+
+**立即使用：**前往 [最新 Release](https://github.com/ranveerankhira-gif/safe-web-agent-skills/releases/latest)，下载所需 Skill，并用同一页面的 `SHA256SUMS.txt` 核对文件。
 
 ## 为什么建立这个仓库
 
@@ -24,7 +38,7 @@
 
 ## 安装
 
-正式版本请从GitHub Releases下载，并核对同一版本的`SHA256SUMS.txt`。
+正式版本请从 [GitHub Releases](https://github.com/ranveerankhira-gif/safe-web-agent-skills/releases/latest) 下载，并核对同一版本的 `SHA256SUMS.txt`。
 
 1. 下载`<skill-name>-<version>.zip`。
 2. 核对SHA-256。
@@ -65,4 +79,8 @@ python -X utf8 scripts/validate_repo.py
 python -X utf8 scripts/package_release.py --release all --verify-only
 python -X utf8 -m unittest discover -s scripts/tests -v
 ```
+
+---
+
+如果你也需要“能联网，但不越权”的 Agent 工作流，欢迎点一个 ⭐，帮助更多人找到这三个安全路由 Skill。
 
